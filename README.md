@@ -1,5 +1,3 @@
-## Hi there 👋
-
 <!--
 **SiskSjet/sisksjet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,3 +12,11 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+<!-- Stats -->
+## My Github stats 
+[![Sisk's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=sisksjet&show_icons=true&ring_color=5A3E91&hide_title=true&bg_color=0D1117&text_color=DDDCD7&icon_color=5A3E91&hide_border=true&rank_icon=github&show_owner=true)](https://github.com/sisksjet#gh-dark-mode-only)
+[![Sisk's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=sisksjet&show_icons=true&ring_color=5A3E91&bg_color=FFFFFF&text_color=1F2328&icon_color=5A3E91&hide_title=true&hide_border=true&rank_icon=github&show_owner=true)](https://github.com/sisksjet#gh-light-mode-only)
+[![Top Langs-Dark](https://github-readme-stats.vercel.app/api/top-langs/?username=sisksjet&layout=donut&ring_color=5A3E91&bg_color=0D1117&text_color=DDDCD7&icon_color=5A3E91&hide_border=true&hide_title=true&rank_icon=percentile&show_owner=true&size_weight=0.5&count_weight=0.5&text_bold=true)](https://github.com/sisksjet#gh-dark-mode-only)
+[![Top Langs-Light](https://github-readme-stats.vercel.app/api/top-langs/?username=sisksjet&layout=donut&ring_color=5A3E91&bg_color=FFFFFF&text_color=1F2328&icon_color=5A3E91&hide_border=true&hide_title=true&rank_icon=percentile&show_owner=true&size_weight=0.5&count_weight=0.5&text_bold=true)](https://github.com/sisksjet#gh-light-mode-only)
