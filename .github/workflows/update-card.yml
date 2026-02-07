@@ -1,0 +1,48 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "5 1 * * *" # Runs once daily at 01:05
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate stats card (dark theme)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&ring_color=5A3E91&hide_title=true&bg_color=0D1117&text_color=DDDCD7&icon_color=5A3E91&hide_border=true&rank_icon=github&show_owner=true
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats card (light theme)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&ring_color=5A3E91&bg_color=FFFFFF&text_color=1F2328&icon_color=5A3E91&hide_title=true&hide_border=true&rank_icon=github&show_owner=true
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (dark theme)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=donut&ring_color=5A3E91&bg_color=0D1117&text_color=DDDCD7&icon_color=5A3E91&hide_border=true&hide_title=true&rank_icon=percentile&show_owner=true&size_weight=0.5&count_weight=0.5&text_bold=true
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (light theme)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=donut&ring_color=5A3E91&bg_color=FFFFFF&text_color=1F2328&icon_color=5A3E91&hide_border=true&hide_title=true&rank_icon=percentile&show_owner=true&size_weight=0.5&count_weight=0.5&text_bold=true
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
